@@ -5,6 +5,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install build-essential curl git vim micro dos2unix make cmake -y
 RUN apt-get install sqlite3 unzip ca-certificates -y
+RUN apt install apache2-utils -y
 RUN apt install python3 python3-pip -y
 #
 # Cloudflare tunnel software
